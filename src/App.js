@@ -1,10 +1,24 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
+import api from './services/api';
 
 import "./styles.css";
 
 function App() {
+
+//  const [repositories, setRepositories] = [];
+
   async function handleAddRepository() {
-    // TODO
+    
+    /*
+    const response = await api.post('repositories', {
+      title: `Novo repositório ${Date.now()}`
+    });
+
+    const repository = response.data;
+        
+    // Aplicando conceito de imutabilidade, copiando todos os projetos já existentes através do spread operator:
+    setRepositories([...repositories, repository]);
+    */
   }
 
   async function handleRemoveRepository(id) {
